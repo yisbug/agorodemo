@@ -1,0 +1,62 @@
+{
+  "name": "vanxx_wx",
+  "version": "1.0.0",
+  "description": "",
+  "eslintIgnore": [
+    "src/lib/"
+  ],
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev:custom": "cd custom && npm start",
+    "dev:server": "cd server && npm run dev",
+    "dev:user": "cd user && npm start",
+    "pub:pay": "/bin/sh ./shell/pubpayuser.sh",
+    "pub:master": "/bin/sh ./shell/pubmaster.sh",
+    "pub:dpay": "/bin/sh ./shell/pubdpayuser.sh",
+    "pub:server": "/bin/sh ./shell/pubserver.sh",
+    "up": "git pull && cd server && npm run reset"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.6.4",
+    "iostore": "0.0.6",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.3"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "create-react-app": "^3.4.1",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-egg": "^7.3.1",
+    "eslint-config-prettier": "^4.2.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-compat": "^3.1.1",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-markdown": "^1.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.13.0",
+    "prettier": "^1.17.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
